@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- 第一行姓名 -->
+    <TableRow
+        android:id="@+id/TR1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+    <!-- 姓名标签 -->
+    <TextView
+        android:id="@+id/TV_e_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textSize="26px"
+        android:padding="15dip"
+        android:layout_marginTop="5dp"/>
+     <!-- 姓名 -->
+     <EditText
+         android:id="@+id/ET_name"
+         android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     android:padding="15dip"
+         />
+    </TableRow>
+	<!-- 第二行手机 -->
+	<TableRow
+	    android:id="@+id/TR2"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+	    <!-- 手机标签 -->
+	    <TextView
+	        android:id="@+id/TV_e_mobile"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/mobile"
+	        android:textSize="26px"
+	        android:padding="15dip"/>
+	    <!-- 手机 -->
+	    <EditText
+	        android:id="@+id/ET_mobile"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:inputType="phone"
+	        android:padding="15dip"/>	    
+	</TableRow>
+	<!-- 第三行座机电话 -->
+	<TableRow
+		android:id="@+id/TR3" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+	    <!-- 座机标签 -->
+	    <TextView
+	        android:id="@+id/TV_e_home"
+	        android:textSize="26px" 
+			android:text="@string/home"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="15dip"/>
+	    <EditText
+	        android:id="@+id/ET_home"
+	        android:layout_width="fill_parent"
+	        android:inputType="phone"
+	        android:layout_height="wrap_content"
+	        android:padding="15dip"/>
+	</TableRow>
+	<!-- 第四行家庭住址 -->
+	<TableRow
+	    android:id="@+id/TR4"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+	    <!-- 住址标签 -->
+	    <TextView
+	        android:id="@+id/TV_e_address"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/address"
+	        android:textSize="26px"
+	        android:padding="15dip"/>
+	    <!-- 住址 -->
+	    <EditText
+	        android:id="@+id/ET_address"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="15dip"/>	    		    
+	</TableRow>
+	<!-- 第五行电子邮箱 -->
+	<TableRow
+	    android:id="@+id/TR5"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent">
+	    <!-- 电子邮箱标签 -->
+	    <TextView
+	        android:id="@+id/TV_e_email"
+	        android:text="@string/email"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:textSize="26px"
+	        android:padding="15dip"/>        
+	    <!-- 电子邮箱 -->
+	    <EditText
+	        android:id="@+id/ET_email"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:inputType="textEmailAddress"
+	        android:padding="15dip"/>
+	</TableRow>
+	<!-- 第六行按钮 -->
+	<TableRow
+	    android:id="@+id/TR6"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"
+	    android:layout_marginTop="40dp">
+		<!-- 保存按钮 -->
+		<Button 
+			android:id="@+id/BTN_save" 
+			android:layout_height="wrap_content" 
+			android:text="@string/ok" 
+			android:textSize="36px" 
+			android:layout_width="wrap_content"
+			android:padding="15dip" />
+		<!-- 取消按钮 -->
+		<Button 
+			android:id="@+id/BTN_cancel" 
+			android:layout_height="wrap_content" 
+			android:text="@string/cancel" 
+			android:textSize="36px" 
+			android:layout_width="wrap_content"
+			android:padding="15dip" />
+	</TableRow>
+</LinearLayout>

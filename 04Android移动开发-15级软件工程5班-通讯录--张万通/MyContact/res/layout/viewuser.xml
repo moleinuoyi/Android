@@ -1,0 +1,109 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mycontact.MyContacts" >"
+	<!-- android:layout_column="0"将会放在第一列 -->
+	<!-- android:layout_column="1"第一列是空白的，信息将会在第二列开始显示 -->
+	<!-- android:padding="15dip"为内边框 -->
+	<TableRow>
+	    <TextView
+	        android:layout_column="1"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	
+        	android:text="查看联系人"
+        	android:textSize="26dp"
+        	android:layout_centerHorizontal="true"
+        	android:padding="15dip"/>
+	</TableRow>
+	<!-- 间隔线 -->
+	<View
+	    android:layout_height="5dip"
+	    android:background="#ffffffff" />
+	<TableRow>
+	    <!-- 姓名标签 -->
+	    <TextView
+	        android:layout_column="1"
+	        android:text="@string/name"
+	      
+	        android:padding="10dip" />
+	    <TextView
+	        android:id="@+id/TV_name"
+	        
+	        android:padding="10dip"/>
+	</TableRow>
+    <!-- 间隔线 -->
+	<View
+	    android:layout_height="3dip"
+	    android:background="#ffffffff" />
+	<TableRow>
+	    <!-- 手机标签 -->
+	    <TextView
+	        android:layout_column="1"
+	        android:text="@string/mobile"
+	        
+	        android:padding="10dip"/>
+	    <!-- 手机 -->
+	    <TextView
+	        android:id="@+id/TV_mobile"
+	        
+	        android:padding="10dip"/>"
+	</TableRow>
+	<!-- 间隔线 -->
+	<View
+	    android:layout_height="3dip"
+	    android:background="#ffffffff" />
+	<TableRow>
+        <!-- 座机标签 -->
+        <TextView
+            android:layout_column="1"
+            android:text="@string/home"
+            
+            android:padding="10dip" />
+        <!-- 座机 -->
+        <TextView
+			android:id="@+id/TV_home"
+            
+            android:padding="10dip" />
+    </TableRow>
+	<View
+        android:layout_height="3dip"
+        android:background="#ffffffff" />
+    <TableRow>
+        <!-- 住址标签 -->
+        <TextView
+            android:layout_column="1"
+            android:text="@string/address"
+            
+            android:padding="10dip" />
+        <!-- 住址 -->
+        <TextView
+			android:id="@+id/TV_address"
+            
+            android:padding="10dip" />
+    </TableRow>
+    <View
+        android:layout_height="3dip"
+        android:background="#ffffffff" />
+    <TableRow>
+        <!-- 电子邮箱标签 -->
+        <TextView
+            android:layout_column="1"
+            android:text="@string/email"
+            
+            android:padding="10dip" />
+        <!-- 电子邮箱 -->
+        <TextView
+			android:id="@+id/TextView_Email"
+            
+            android:padding="10dip" />
+    </TableRow>
+    <View
+        android:layout_height="3dip"
+        android:background="#ffffffff" />
+</TableLayout>
