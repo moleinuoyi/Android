@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.alerdialog.DialogAlert" >
+
+        <item
+        android:id="@+id/action_calendar"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_calendar"/>
+
+</menu>
